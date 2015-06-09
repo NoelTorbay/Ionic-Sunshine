@@ -200,6 +200,9 @@
     return {
         all: function () {
             return forecasts;
+        },
+        get: function (forecastId) {
+            return forecasts.list[forecastId];
         }
     };
 });
